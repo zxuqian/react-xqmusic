@@ -4,15 +4,15 @@ class Sidebar extends Component {
     render() {
         return (
             <aside className="Xq-Sidebar">
-                <div class="Xq-Logo">
+                <div className="Xq-Logo">
                     <h1>Xqmusic</h1>
                 </div>
-                <ul>
-                    <li>test</li>
-                    <li>test</li>
-                    <li>test</li>
-                    <li>test</li>
-                    <li>test</li>
+                <ul className="Xq-Menu">
+                    <li>Profile</li>
+                    <li>Music</li>
+                    <li>Collection</li>
+                    <li>Favorites</li>
+                    <li>Random</li>
                 </ul>
             </aside>
         )
