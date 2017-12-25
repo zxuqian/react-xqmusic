@@ -1,3 +1,60 @@
+#root, html, body {
+  width: 100%;
+  height: 100%;
+  min-width: 960px;
+  min-height: 768px;
+}
+
+div, main, h1, header {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  /*background: #333;*/
+  height: 100%;
+  display: grid;
+  /*grid-template-columns: repeat(12, 1fr);*/
+  /*grid-gap: 20px;*/
+  grid-template-areas: "nav head"
+                       "nav content";
+                       /*"nav footer";*/
+  grid-template-columns: 200px 1fr;
+}
+
+.Xq-Sidebar {
+  /*grid-column: auto / span 2;*/
+  background: rgb(43, 48, 62);
+  grid-area: nav;
+}
+
+.Xq-Sidebar .Xq-Logo {
+  background: rgb(230, 69, 96);
+}
+
+.Xq-Sidebar .Xq-Logo h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 100px;
+}
+
+.Xq-Header {
+  background: rgb(241, 242, 244);
+  width: 100%;
+  height: 100px;
+  grid-area: head;
+}
+
+.Xq-Playlist {
+  /*grid-column: auto / span 10;*/
+  grid-area: content;
+}
+
+
+
 .App {
   text-align: center;
 }
